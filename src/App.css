@@ -1,20 +1,11 @@
+body {
+  background-color: #f7ede3;
+}
+
 .App {
   text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  color: #252220;
+  height: 100vh;
 }
 
 .title {
@@ -22,16 +13,81 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: 160px;
+  top: 10vw;
   margin: auto;
-  font-size: 36px;
+  font-size: 3rem;
+  font-family: 'Recoleta-Bold', serif;
 }
 
 .mainText {
   text-align: center;
-  width: 90vw;
+  width: 100vw;
   justify-content: center;
-  margin: auto;
   position: relative;
-  top: 200px;
+  top: 20vmin;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar {
+  border: none !important;
+  background-color: #f7ede3;
+  color: #252220 !important;
+}
+
+.p-menuitem-text {
+  color: #252220 !important;
+}
+
+.p-menubar.p-menubar-mobile-active .p-menubar-root-list {
+  background-color: #f7ede3;
+}
+
+.p-menubar .p-menubar-button {
+  color: #252220;
+}
+
+img {
+  max-width: 40vmin;
+}
+
+.aboutImg {
+  max-width: 90vw !important;
+}
+
+.font {
+  font-family: 'Recoleta-Bold', serif;
+  color: #252220 !important;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url("./fonts/Recoleta-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Recoleta-Medium';
+  src: url('./fonts/Recoleta-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Recoleta-Bold';
+  src: url('./fonts/RecoletaAlt-Bold.ttf');
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-family: 'Recoleta-Bold', serif;
+  color: #252220 !important;
+}
+
+.p-menubar {
+  background-color: #f7ede3;
 }

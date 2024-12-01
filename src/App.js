@@ -1,37 +1,31 @@
 import './App.css';
 import 'primereact/resources/themes/arya-blue/theme.css';
-import { Menubar } from 'primereact/menubar';
-import { About } from './Pages/About';
-
-const menuItems = [
-  {
-    label: "Home",
-    command: (e) => {
-      console.log("Return Home");
-    },
-  },
-  {
-    label: "Shop",
-    command: (e) => {
-      console.log("Open Shop");
-    },
-  },
-  {
-    label: "About",
-    command: (e) => {
-      console.log("Show About Page");
-    },
-  },
-];
+import Navbar from './Components/navbar';
+import Footer from './Components/footer';
+import wheel from './Images/wheel.jpg';
+import raku from './Images/raku.JPG';
+import lavender from './Images/lavender.JPG';
+import matchStriker from './Images/matchStriker.JPG';
 
 const App = () => {
   return (
-    <div className="App">
-      <Menubar model={menuItems}/>
-      <div className="title">We Do Pottery Sometimes</div>
-      <p className="mainText">
-        Lorem ipsum ur mom asdlfkj asdf alkjsdf alkjasdf lkjgwoiertuq c,mvno xcvklnmzxvoi wert,mnx cvoiqertkjnzdosivuh weijkh vcoiuhwe iucv wenbvoxciuh wexcivuhnweiouh fiuhsd fwijfhaslkjf wepriuh sdlkjnwe9ourh suifh wefiuweh flkjnxcvmnb kjghbvb yuiggyhu sdjknasdv sd s fe roi23h5jn56 kjl1b234 12 4986 hbscv8o7gyb 3h2jnewc dx87tgyhbu jbnw xc67yh vgbnm6 n645 3ertgfcv
-      </p>
+    <div>
+      <div className="App">
+        <Navbar />
+        <div className="title">Ecliptic Clayworks</div>
+        <p className="mainText font">
+          Seattle-based pottery studio 
+          <br />
+          <br />
+          <div style={{ display: 'block', justifyContent: 'space-evenly', width: '80vw'}} >
+            <img src={wheel} alt="wheel" />
+            <img src={raku} alt="wheel" />
+            <img src={lavender} alt="wheel" />
+            <img src={matchStriker} alt="wheel" />
+          </div>
+        </p>
+      </div>
+      <Footer />
     </div>
   );
 }
